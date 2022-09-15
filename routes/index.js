@@ -26,7 +26,6 @@ router.get("/", (req, res) => {
 router.get("/shop", (req, res) => {
     var boulet = false;
     // mise à jour du panier
-    // console.log(req.session.dataCardBike);
     for (var i = 0; i < req.session.dataCardBike.length; i++) {
         if (req.session.dataCardBike[i].name === req.query.bikename) {
             req.session.dataCardBike[i].quantity += 1;
@@ -46,17 +45,9 @@ router.get("/shop", (req, res) => {
 
     res.render("shop", { dataCardBikeEJS: req.session.dataCardBike });
 });
-// for (let x in req.session.dataCardBike) {
-// console.log(x.name);
-// if (( x[i].name = req.query.bikename)) {
-//         x[i].quantity = req.query.bikequantity++;
-// } else {
-//     req.session.dataCardBike.splice(req.query.id, 1);
-//     }
 
 router.get("/delete-shop", (req, res) => {
     // on efface avec le bouton poubelle
-    // console.log(req.query.id);
     req.session.dataCardBike.splice(req.query.id, 1);
 
     res.render("shop", { dataCardBikeEJS: req.session.dataCardBike });
