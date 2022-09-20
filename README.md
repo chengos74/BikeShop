@@ -1,9 +1,13 @@
 Projet fullstack d'un site d'achat de vélo avec deploiement
 https://warm-wildwood-37694.herokuapp.com/
 
-technologies utilisées
-pour le frontend : HTML, CSS
-pour le backend : Nodejs, express
+## Stack :
+- Node
+- Express
+- Javascript
+- EJS
+- Bootstrap
+- Stripe checkout module
 
 page d'accueil
 ![image](https://user-images.githubusercontent.com/47262263/190516845-518993d3-3d8a-4556-96f6-232131b55026.png)
