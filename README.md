@@ -1,4 +1,4 @@
-Projet fullstack d'un site d'achat de vélo avec deploiement
+Projet fullstack d'un site d'achat de vélo avec deploiement sur Heroku
 https://warm-wildwood-37694.herokuapp.com/
 
 ## Stack :
